@@ -1,8 +1,9 @@
+//JD
 public class BinaryIterativeSearch implements Practice03Search {
 
     @Override
     public String searchName() {
-        return "Binary Iterative Search";
+        return "binary-iterative";
     }
 
     @Override

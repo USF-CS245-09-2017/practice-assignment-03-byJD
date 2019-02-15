@@ -1,17 +1,18 @@
+//JD
 public class LinearSearch implements Practice03Search{
 
     @Override
     public String searchName() {
 
-        return "Linear Search";
+        return "linear";
     }
 
     @Override
-    public int search(int[] arrayz, int target)
+    public int search(int[] arr, int target)
     {
-        for (int i=0; i<arrayz.length; i++)
+        for (int i=0; i<arr.length; i++)
         {
-            if (target == arrayz[i])
+            if (target == arr[i])
             {
                 return i;
             }

@@ -1,7 +1,8 @@
+//JD
 public class BinaryRecursiveSearch implements Practice03Search {
     @Override
     public String searchName() {
-        return "Binary Recursive Search";
+        return "binary-recursive";
     }
 
     @Override
@@ -11,18 +12,18 @@ public class BinaryRecursiveSearch implements Practice03Search {
         }
     }
 
-    private int binaryRecSearch(int[] arrayz, int target, int low, int upper) {
+    private int binaryRecSearch(int[] arr, int target, int low, int upper) {
         if (low > upper) {
             return -1;
         }
         int mid = (low + upper) / 2;
 
-        if (arrayz[mid] == target) {
+        if (arr[mid] == target) {
             return mid;
-        } else if (target < arrayz[mid]) {
-            return binaryRecSearch(arrayz, target, low, mid - 1);
+        } else if (target < arr[mid]) {
+            return binaryRecSearch(arr, target, low, mid - 1);
         } else {
-            return binaryRecSearch(arrayz, target, mid + 1, upper);
+            return binaryRecSearch(arr, target, mid + 1, upper);
         }
     }
 }
